@@ -8,18 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var circRed: UIImageView!
+    @IBOutlet weak var circBlue: UIImageView!
+    @IBOutlet weak var buttonRed: UIButton!
+    @IBOutlet weak var buttonBlue: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func clickRed(sender: AnyObject) {
+        circRed.hidden = true
+    }
+   
+    @IBAction func clickBlue(sender: AnyObject) {
+        circBlue.hidden = true
+    }
 
 }
 
